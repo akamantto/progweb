@@ -10,6 +10,8 @@
 <style>
     body{
         background-color: antiquewhite;
+        font-size: large;
+        font-family: cursive;
     }
     header{
         background-color: darkgray;
@@ -19,7 +21,23 @@
         color: brown;
     }
     img{
+        width: 40px;
         border-radius: 50%;
+    }
+    #InstaLogo{
+        position: relative;
+        right: 30px;
+        top: 40px;
+    }
+    #gitLogo{
+        position:relative;
+        right: 30px;
+        top: 40px;
+    }
+    #linkedinLogo{
+        position:relative;
+        right: 30px;
+        top: 40px;
     }
     #Informacoes{
         display: inline-block;
@@ -28,13 +46,25 @@
         display: inline-block;
         position: relative;
     }
+    #InstaLink{
+        position: relative;
+        left: 20px;
+    }
+    #gitLink{
+        position: relative;
+        left: 20px;
+    }
+    #linkedinLink{
+        position: relative;
+        left: 20px;
+    }
 </style>
 
 
 <body>
     <header>
         <h1>Pedro Henrique de Alcantara Abrantes</h1>
-        <img src="musashi.jpg" alt="">
+        <div id="fotoPerfil"><img src="musashi.jpg" alt=""></div>
     <div id="Informacoes">
         <ul>
             <h4>Informações</h4>
@@ -47,9 +77,12 @@
     <div id="RedesSociais">
         <ul>
             <h4>Redes Sociais</h4>
-            <li>Instagram : @alcantaraa_ph</li>
-            <li>GitHub : akamantto</li>
-            <li>Linkedin : Pedro Henrique de Alcântara Abrantes</li>
+            <div id="InstaLogo"><img src="instaLogo.jpg" alt=""></div>
+            <div id="InstaLink"><a href="https://www.instagram.com/alcantaraa_ph/">@alcantaraa_ph</a></div>
+            <div id="gitLogo"><img src="githubLogo.png" alt=""></div>
+            <div id="gitLink"><a href="https://github.com/akamantto">akamantto</a></div>
+            <div id="linkedinLogo"><img src="linkedinLogo.png" alt=""></div>
+            <div id="linkedinLink"><a href="https://www.linkedin.com/in/pedroalcantaraabrantes/">Pedro Henrique de Alcântara Abrantes</a></div>
         </ul>
     </div>
 </header>
@@ -62,6 +95,7 @@
     <li><a href="#ExpProfissional">Experiência Profissional</a></li>
     <li><a href="#Cursos">Cursos</a>
     </li>
+    <li><a href="#Horarios">Horarios</a></li>
 </ol>
 <hr>
     <h2 id="QuemSou">Quem sou?</h2>
@@ -101,7 +135,61 @@
             <li>Lógica de Programação | CursoEmVideo</li>
             <li>Programação Orientada a Objetos | CursoEmVideo</li>
             <li>SQL - DML & DDL</li>
-
         </ul>
+<hr>
+<div id="HorariosTable">
+    <h2 id="Horarios">Horários</h2>
+    <table border="1">
+        <tr>
+            <td>Dia da Semana</td>
+            <td>Manhã(8h - 12h)</td>
+            <td>Tarde(12h - 18h30)</td>
+            <td>Noite(18h30-22h30)</td>
+        </tr>
+        <tr>
+            <td>Segunda-Feira</td>
+            <td>Trabalhando</td>
+            <td>Disponivel</td>
+            <td>Estudando</td>
+        </tr>
+        <tr>
+            <td>Terça-Feira</td>
+            <td>Trabalhando</td>
+            <td>Disponivel</td>
+            <td>Estudando</td>
+        </tr>
+        <tr>
+            <td>Quarta-Feira</td>
+            <td>Trabalhando</td>
+            <td>Disponivel</td>
+            <td>Estudando</td>
+        </tr>
+        <tr>
+            <td>Quinta-Feira</td>
+            <td>Trabalhando</td>
+            <td>Disponivel</td>
+            <td>Estudando</td>
+        </tr>
+        <tr>
+            <td>Sexta-Feira</td>
+            <td>Trabalhando</td>
+            <td>Disponivel</td>
+            <td>Estudando</td>
+        </tr>
+        <tr>
+            <td>Sabado</td>
+            <td>Disponivel</td>
+            <td>Disponivel</td>
+            <td>Disponivel</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>Disponivel</td>
+            <td>Disponivel</td>
+            <td>Disponivel</td>
+        </tr>
+
+    </table>
+</div>
 </body>
 </html>
