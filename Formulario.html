@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <h1>Formulario</h1>
+        <form action="" method="POST">
+        <label for="Nome">Nome</label>
+        <input id="Nome" type="text" name="Nome"value="">
+        <br>
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email"value="">
+        <br>
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" name="senha" value="">
+        <br>
+        <label for="senhaconfirm">Confirme a senha</label>
+        <input type="password" name="passConfirm" value="">
+        <br>
+        <label for="termAccept">Aceito os termos</label>
+        <input type="checkbox" name="termaAccept">
+        <br>
+        <label for="uf">Estado</label>
+        <select name="uf" id="estado" required>
+            <option value="">Selecione</option>
+            <option value="">Rio Grande Do Sul</option>
+            <option value="">Paraná</option>
+            <option value="">Santa Catarina</option>
+        </select>
+        <br>
+        <label for="genderMasc">Masculino</label>
+        <input type="radio" name="gender">
+        <label for="genderFem">Feminino</label>
+        <input type="radio" name="gender">
+        <input type="submit">
+    </form>
+    </div>
+</body>
+</html>
