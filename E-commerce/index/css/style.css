@@ -17,11 +17,15 @@ html,body{
 .eatsy-texto{
     grid-column: 2;
     grid-row: 2;
+    display:flex;
+    flex-wrap: wrap;
     margin-bottom: 0;
     font-size: 130px;
 }
 h2.slogan-banner{
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 40px;
     grid-row:3;
     grid-column:2;
@@ -40,6 +44,13 @@ h2.slogan-banner{
     grid-column-end:5;
     border-radius: 20px 20px 20px 20px;
 }
+.caixa-entrar:hover{
+    background-color: #2a942a;
+    cursor:pointer;
+    transform:scale(1.05);
+    transition: all 1 ease;
+
+}
 .caixa-entrar u {
     font-size: 35px;
 }
@@ -47,9 +58,73 @@ h2.slogan-banner{
     grid-area: 3/4;
     display:flex;
     justify-content: center;
-    align-items: space-around;
+    align-items: flex-start;
 }
 .texto-criar-conta p{
-    margin:30px;
+    margin:20px;
     font-size: 30px;
+}
+
+
+
+.login{
+    background-color: #3a5750;
+}
+.grid-container-login{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(8,12.5%);
+    grid-template-rows: repeat(8,12.5%)
+}
+.img-user{
+    width: 200%;
+    grid-row: 3/span 3;
+    grid-column: 2/3;
+}
+.caixa{
+    grid-column: 4/6;
+    grid-row: 4;
+}
+.caixa input{
+    justify-self: center;
+    align-self: flex-end;
+    width: 400px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    border-style: hidden;
+    background-color: #a1d793;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: larger;
+}
+.caixa label{
+    font-size: 25px;
+}
+.continuar{
+    display: flex;
+    margin : 0px 30px 0px 0px;
+    justify-content: right;
+    align-items: flex-start;
+    grid-row: 6;
+    grid-column:5;
+}
+.continuar a{
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.continuar:hover{
+    cursor:pointer;
+    transform:scale(1.05);
+}
+.imgContinuar{
+    grid-row: 6;
+    grid-column: 6/7;
+}
+.imgContinuar img{
+    width: 50px;
+    height: 50px;
 }
